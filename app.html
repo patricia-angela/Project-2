@@ -1,0 +1,148 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link href="src/styles.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <style>
+      body {
+        border: solid;
+        border-color: #a1d7b4;
+        border-radius: 10px;
+        font-family: "Merriweather", serif;
+        background-color: #f2eac1;
+        position: fixed;
+        margin: 30px 30px;
+        width: 600px;
+      }
+      h1 {
+        border: 3px dotted;
+        text-align: center;
+        border-color: #a1d7b4;
+        border-radius: 30px;
+        padding: 15px auto;
+        margin: 25px auto;
+        width: 400px;
+        color: #373331;
+      }
+      h2 {
+        border: 3px dotted;
+        text-align: center;
+        border-color: #a1d7b4;
+        border-radius: 30px;
+        padding: 50px auto;
+        margin: 15px auto;
+        width: 175px;
+        color: #373331;
+      }
+      .button {
+        background-color: #80ac7b;
+        border: solid;
+        border-color: #a1d7b4;
+        color: #373331;
+        transition: all 200ms ease-in-out;
+        border-radius: 50px;
+      }
+      .button:hover {
+        cursor: pointer;
+        background: #ffffff;
+      }
+      .city {
+        background-color: #80ac7b;
+        border: solid;
+        border-color: #a1d7b4;
+        border-radius: 50px;
+        text-align: center;
+      }
+      .stats {
+        display: block;
+        text-align: center;
+      }
+      .dayTime {
+        display: block;
+        text-align: center;
+      }
+      .searchButton {
+        text-align: center;
+        font-size: 15px;
+      }
+      .fiveDays {
+        text-align: center;
+        font-size: 13px;
+        padding: 20px 10px;
+        margin-bottom: 25px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>Warsaw</h1>
+          <p class="stats">🌥️ • 10m/h • 30%</p>
+          <h2>18°C</h2>
+          <p class="dayTime">Saturday • 21:03</p>
+          <form>
+            <div class="searchButton">
+              <input type="search" placeholder="Enter a city" class="city" />
+              <input type="submit" value="Search" class="button" />
+              <input type="submit" value="Current" class="button" />
+            </div>
+          </form>
+          <br />
+          <div class="fiveDays">
+            <div class="row">
+              <div class="col">
+                Tuesday
+                <br />
+                18°C
+                <br />
+                🌦️
+              </div>
+              <div class="col">
+                Sunday
+                <br />
+                20°C
+                <br />
+                ☀️
+                <br />
+                Wednesday
+                <br />
+                20°C
+                <br />
+                ☀️
+              </div>
+              <div class="col">
+                Monday
+                <br />
+                22°C
+                <br />
+                🌤️
+                <br />
+                Thursday
+                <br />
+                21°C
+                <br />
+                ⛅
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script></script>
+  </body>
+</html>
